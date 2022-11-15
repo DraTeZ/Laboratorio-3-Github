@@ -10,4 +10,6 @@ const RecetaSchema = new Schema({
 });
 
 
+
+
 module.exports =   mongoose.model("Receta", RecetaSchema);
