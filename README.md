@@ -18,3 +18,5 @@ Consideraciones:
 
 
 para bajar directamente esta ram https://es.stackoverflow.com/questions/439835/c%C3%B3mo-bajar-una-rama-en-git-sin-mezclarla-con-la-master
+
+para recibir actualisaciones git pull -r <rama a la q le quieran hacer pull><rama de sus consolas>
