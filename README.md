@@ -15,3 +15,6 @@ Consideraciones:
 -La estructura ya cuenta con el modelo mvc, donde la carpeta "models" es exclusiva para la declaración de clases.
 -"control" es exclusivo para los métodos y funciones.
 -"roads" es exclusivo para enviar endpoints al Front.
+
+
+para bajar directamente esta ram https://es.stackoverflow.com/questions/439835/c%C3%B3mo-bajar-una-rama-en-git-sin-mezclarla-con-la-master
