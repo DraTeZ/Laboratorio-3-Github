@@ -53,6 +53,7 @@ const Registro =()=> {
         window.location.href='./index'
       }, 1600);
 
+      
     }
       //onChange={(e)=>setemail(e.target.value) sirve para captuarr datos del
       
