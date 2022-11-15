@@ -8,7 +8,7 @@ import Registro from './components/Registro';
 function App() {
   return (
     <Router>
-    <Barra/>
+    <Registro/>
     <Route path="/form" element={<Registro />}></Route>
     
   </Router>
