@@ -6,16 +6,15 @@ import axios from 'axios'
 import Button from 'react-bootstrap/Button';
 
 
-const Registro =()=> {
-  //metodo de registrar usuario
+const Login =()=> {
+  //metodo de login
   
-  const [name,setName]=useState(' ')
   const [email,setemail]=useState(' ')
   const [password,setpassword]=useState(' ')
 
-  const registro = async (e) => {
+  const login = async (e) => {
     e.preventDefault();
-    const usuario={name,email,password}
+    const usuario={email,password}
     //la respesta es una peticion
     console.log(usuario.name)
     axios.defaults.baseURL='http://localhost:4000'
@@ -58,31 +57,27 @@ const Registro =()=> {
       //onChange={(e)=>setemail(e.target.value) sirve para captuarr datos del
       
     };
-    return (
-      <div className='container'>
-            <div className='row'>
-                <h2 className='mt-6'>Crear un nuevo usuario</h2>
-            </div>
+  return (
 
-      <Form className='container' onSubmit={registro}>
-        <Form.Group className="mb-3" controlId="formGroupNAme"    >
-          <Form.Label>Nombre:</Form.Label>
-          <Form.Control type="text" placeholder="Ingrese su nombre" onChange={(e)=>setName(e.target.value)} />
-        </Form.Group>
+    <div className='container'>
+            <div className='row'>
+                <h2 className='mt-6'>Iniciar sesión</h2>
+            </div>
+      <Form className='container' onSubmit={login}>
         <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>Correo Electrónico:</Form.Label>
-          <Form.Control type="email" placeholder="Ingrese correo electrónico" onChange={(e)=>setemail(e.target.value)}/>
+          <Form.Label>Dirección de correo</Form.Label>
+          <Form.Control type="email" placeholder="Ingrese su correo eléctronico" onChange={(e)=>setemail(e.target.value)}/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupPassword">
-          <Form.Label>Contraseña:</Form.Label>
-          <Form.Control type="password" placeholder="Ingrese una contraseña" onChange={(e)=>setpassword(e.target.value)}/>
+          <Form.Label>Contraseña</Form.Label>
+          <Form.Control type="password" placeholder="Ingrese su contraseña" onChange={(e)=>setpassword(e.target.value)}/>
         </Form.Group>
         <Button variant="primary" type="submit">
-        Confirmar Registro
+        Ingresar
       </Button>
       </Form>
-      </div>
-    );
+    </div>
+  );
 }
 
-export default Registro;
+export default Login;
